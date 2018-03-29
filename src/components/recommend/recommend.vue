@@ -1,13 +1,13 @@
 <!-- recommend.vue -->
 <template>
-  <div></div>
+  <div>recommend</div>
 </template>
 
 <script>
 export default {
   data () {
     return {
-    };
+    }
   },
 
   components: {},
