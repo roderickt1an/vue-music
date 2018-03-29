@@ -11,8 +11,10 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Recommend',
-      component: Recommend
+      redirect: {
+        name: 'Recommend'
+      }
+    // 最好使用重定向而不是组件
     },
     {
       path: '/recommend',
