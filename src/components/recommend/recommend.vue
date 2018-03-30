@@ -20,6 +20,7 @@ import {ERR_OK} from '@/api/config'
 export default {
   data () {
     return {
+      recommends: []
     }
   },
   created () {
@@ -34,6 +35,8 @@ export default {
       getRecommend().then((res) => {
         if (res.code === ERR_OK) {
           console.log(res.data)
+          this.recommends = res.data.slider
+          console.log(this.recommends)
         }
       })
     }
